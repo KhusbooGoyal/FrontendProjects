@@ -1,0 +1,137 @@
+body {
+  background-color: #c2b179;
+  text-align: center;
+  min-width: 350px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.box{
+ height: 100%;
+ width: 50%;
+ background-color:  #3f330a;
+ margin: auto;
+}
+
+.rectangle {
+  height: 200px;
+  width: 250px;
+  margin-top: 20px;
+  background: linear-gradient(to right, black 99.99%, transparent), linear-gradient(to bottom, black 99.99%, transparent), linear-gradient(to right, black 99.99%, transparent), linear-gradient(to bottom, black 99.99%, transparent);
+  background-size: 100% 5px, 5px 100%, 100% 5px, 5px 100%;
+  background-repeat: no-repeat;
+  background-position: -250px 0px, 245px -200px, 250px 195px, 0px 200px;
+}
+
+#timerBox{
+    margin-top: 100px;
+    height: 200px;
+    width: 250px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+}
+hr {
+  border-top: 1px dashed white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.timerDisplay {
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#sec-1{
+    height: 15%;
+    margin: auto;
+    position: relative;
+}
+
+#status {
+  color: white;
+  font-size: 2em;
+     margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+p{
+    font-size: 12px;
+    color: white;
+}
+#sess{
+    color: rgba(39, 245, 252, 0.514);
+    font-size: 1.3em;
+}
+#bre{
+    color: rgba(252, 127, 70, 0.514);
+    font-size: 1.3em;
+}
+.container {
+  padding: 0px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.btn { 
+  
+  color: white;
+  font-size: 1em;
+  cursor:pointer;
+}
+
+#start-btn {
+  height: 40px;
+  width: 90px;
+  border-radius: 5px;  
+  background: black;
+}
+
+.btn-settings {
+  background-color: #232329;
+  height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  color: white;
+  font-size: 1.5em;
+  cursor:pointer;
+}
+
+.settings {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+}
+
+#reset {
+  height: 40px;
+  width: 90px;
+  border-radius: 5px;  
+  background: black;
+  
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .timerDisplay {
+  font-size: 2em;
+  }
+}
+
+.progress-ring {
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: rgb(51, 65, 255);
+}
